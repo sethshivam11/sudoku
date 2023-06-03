@@ -1,0 +1,89 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    cursor: default;
+}
+#play{
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+}
+#heading{
+    font-size: 3rem;
+    font-weight: bold;
+    border-bottom: 3px solid grey;
+    width: auto;
+    text-align: center;
+    color: darkgray;
+    padding: 1rem;
+}
+#errors{
+    padding: 0.5rem;
+    text-align: center;
+    width: auto;
+    font-weight: light;
+    color: tomato;
+}
+#board{
+    width: 450px;
+    height: 450px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+#digits{
+    background-color: white;
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+.tile{
+    width: 48px;
+    height: 48px;
+    border: 1px solid grey;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.number{
+    width: 46px;
+    height: 46px;
+    margin: 1px 1px;
+    border: 1px solid grey;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.selected {
+    background-color: grey;
+    color: white;
+}
+.tile-start{
+    font-weight: bold;
+    background-color: lightgrey;
+}
+.horizontal-line{
+    border-bottom: 1px solid black;
+}
+.vertical-line{
+    border-right: 1px solid black;
+}
+@media screen and (max-width: 1100px){
+    #play{
+        flex-direction: column;
+    }
+    #digits{
+        width: 450px;
+    }
+}
