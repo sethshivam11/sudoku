@@ -66,7 +66,6 @@ function selectNumber() {
     }
     numSelected = this;
     numSelected.classList.add("selected");
-    numSelected = null;
 }
 function selectTile(){
     this.innerText = numSelected.id;
@@ -75,6 +74,8 @@ function selectTile(){
     let c = parseInt(coords[1]);
     if(solution[r][c] == numSelected.id){
         this.innerText = numSelected.id;
+        numSelected = null;
+        numSelected.classList.remove("selected");
     }
     else{
         errors += 1;
