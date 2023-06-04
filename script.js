@@ -66,7 +66,7 @@ function selectNumber() {
     }
     numSelected = this;
     numSelected.classList.add("selected");
-    return;
+    numSelected = null;
 }
 function selectTile(){
     this.innerText = numSelected.id;
